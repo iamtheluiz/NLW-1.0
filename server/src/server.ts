@@ -1,9 +1,12 @@
 import express from 'express';
+import cors from 'cors';
 import path from 'path';
 import routes from './routes';
 
 // Create Express application
 const app = express();
+
+app.use(cors());
 
 // Use JSON as default
 app.use(express.json());
